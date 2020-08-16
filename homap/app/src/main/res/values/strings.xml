@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">homap</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="price">
+        <item>全部价格</item>
+        <item>50以下</item>
+        <item>50-100</item>
+        <item>100-300</item>
+        <item>300以上</item>
+    </string-array>
+
+    <string-array name="star">
+        <item>星级/推荐指数</item>
+        <item>♡ 1 ♡</item>
+        <item>♡ 2 ♡</item>
+        <item>♡ 3 ♡</item>
+        <item>♡ 4 ♡</item>
+        <item>♡ 5 ♡</item>
+    </string-array>
+</resources>

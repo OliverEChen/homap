@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_theme_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_title_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_theme_bg">
+
+        <EditText
+            android:id="@+id/edt_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:background="@drawable/shape_fff_4"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_43496A"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_3853e8_4"
+            android:gravity="center"
+            android:text="查找"
+            android:textColor="@color/whilt"
+            android:textSize="14sp"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_name"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/sel_rbtn"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="按名称"
+                android:textColor="@drawable/sel_text" />
+
+            <RadioButton
+                android:id="@+id/rbtn_location"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sel_rbtn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="按位置"
+                android:textColor="@drawable/sel_text" />
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:background="@drawable/shape_afafaf_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <Spinner
+                android:id="@+id/sp_price"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_afafaf_4"
+                android:entries="@array/price"
+                android:gravity="center"
+                android:text="价格"
+                android:textColor="@color/color_black"
+                android:textSize="14sp" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:background="@drawable/shape_afafaf_4"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <Spinner
+                android:id="@+id/sp_star"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_afafaf_4"
+                android:entries="@array/star"
+                android:gravity="center"
+                android:text="价格"
+                android:textColor="@color/color_black"
+                android:textSize="14sp" />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#333333"
+        android:dividerHeight="1px">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
